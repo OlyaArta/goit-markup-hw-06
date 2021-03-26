@@ -312,6 +312,7 @@ img {
     margin: auto;
 
     border-radius: 4px;
+    border-color: var(--accent-color);
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -722,15 +723,27 @@ img {
 }
 
 .footer-mail-input {
-        height: 50px;
-        width: 358px;
-        padding: 16px 15px;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        box-sizing: border-box;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        border-radius: 4px;
-        background: transparent;
-        color: var(--primary-white-color);
+    height: 50px;
+    width: 358px;
+    padding: 16px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: transparent;
+    color: var(--primary-white-color);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    margin-top: 20px;
 }        
 
 .footer-mail-input:focus {
@@ -738,23 +751,44 @@ img {
 }
 
 .footer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    margin-left: 12px;
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    border-color: var(--accent-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+}
+
+.send-icon {
+    margin-left: 10px;
 }
 
 /* ============= end footer ============= */
 /* ============= modal window ============= */
 
 .backdrop {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.5);
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                     250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            250ms cubic-bezier(0.4, 0, 0.2, 1);
         
       }
 
@@ -924,7 +958,7 @@ img {
   }
   
   .modal-form-term:checked + .modal-form-check-desc::before {
-    background-image: url(../images/check.svg);
+    background-image: url(../images/icons/check.svg);
     background-position: center;
   }
   
@@ -963,7 +997,7 @@ img {
   .modal-form-btn:hover,
   .modal-form-btn:focus {
     background-color: #188CE8;
-  }r
+  }
 
 
 
